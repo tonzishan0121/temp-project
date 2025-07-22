@@ -198,6 +198,15 @@
             margin-bottom: 30px;
         }
 
+        /* 新增测试数据提示样式 */
+        .test-hint {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 15px;
+            text-align: center;
+            font-style: italic;
+        }
+
         @media (max-width: 480px) {
             .error-container {
                 padding: 40px 30px;
@@ -247,8 +256,13 @@
         <div class="error-code">400</div>
         <h1 class="error-title">错误请求</h1>
         <p class="error-description">
-            抱歉，您的请求格式不正确或包含无效参数。<br>
-            请检查您的输入或返回首页重试。
+            抱歉，您的请求未包含合法id。<br>
+            请检查您输入的id。
+        </p>
+
+        <!-- 添加测试数据提示 -->
+        <p class="test-hint">
+            测试数据ID范围：10000 到 10004
         </p>
 
         <!-- 新增表单区域 -->
